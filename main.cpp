@@ -12,7 +12,7 @@ const char* password = "";
 // Configuration MQTT
 const char* mqtt_server = "mqtt.eu.thingsboard.cloud"; //thingsboard server
 const int mqtt_port = 1883;
-const char* access_token = "1rfse61l1zqltl5baa9t"; 
+const char* access_token = "1rfse61l1zqltl5baa9t"; //à remplacer avec l access token du device sur thingsboard
 
 // Configuration LCD I2C
 LiquidCrystal_I2C lcd(0x27, 16, 2);
@@ -45,7 +45,7 @@ bool door_open = false;
 WiFiClient espClient;
 PubSubClient client(espClient);
 
-// Ajouter cette fonction debug :
+// Ajouter cette fonction debug (recommandé)
 void printMQTTState(int state) {
   Serial.print("État MQTT: ");
   switch(state) {
@@ -107,7 +107,7 @@ void reconnect() {
     }
   }
 
-void sendTelemetry(const char* key, const char* value) {
+void sendTelemetry(const char* key, const char* value) {  //send telemetry to thingsboard 
   char payload[100];
   snprintf(payload, sizeof(payload), "{\"%s\":\"%s\"}", key, value);
   client.publish("v1/devices/me/telemetry", payload);
@@ -156,7 +156,7 @@ void loop() {
   }
   client.loop();
 
-  // Gestion clavier (à revoir)
+  // Gestion clavier 
   char key = keypad.getKey();
   if (key) {
     if (key == '*') {
@@ -190,7 +190,7 @@ void loop() {
     }
   }
 
-  // Détection mouvement
+  // Détection de mouvement
   if (digitalRead(pirPin) == HIGH && !door_open) {
     digitalWrite(ledPin, HIGH);
     sendTelemetry("motion", "detected");
