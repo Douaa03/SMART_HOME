@@ -14,7 +14,7 @@ const char* ssid = "Wokwi-GUEST";
 const char* password = "";
 const char* mqtt_server = "mqtt.eu.thingsboard.cloud";
 const int mqtt_port = 1883;
-const char* access_token = "c5esx62cenp8oym2zm21";
+const char* access_token = "****"; //copy the valid access token
 
 WiFiClient espClient;
 PubSubClient client(espClient);
