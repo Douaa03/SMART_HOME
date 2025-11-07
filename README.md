@@ -20,6 +20,8 @@ Key elements include:
 - **Dashboarding & Alerts** — ThingsBoard dashboards display live data; alerts trigger based on defined thresholds or events.
 
 ---
+<br><br>
+![](https://github.com/Douaa03/Douaa03/blob/main/schéma.png)
 
 ## 🔧 Technologies / Stack  
 - Device layer: ESP32/other microcontrollers
