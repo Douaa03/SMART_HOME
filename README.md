@@ -21,7 +21,7 @@ Key elements include:
 
 ---
 <br><br>
-![](https://github.com/Douaa03/Douaa03/blob/main/schéma.png)
+![](https://github.com/Douaa03/SMART_HOME/blob/main/schéma.png)
 
 ## 🔧 Technologies / Stack  
 - Device layer: ESP32/other microcontrollers
