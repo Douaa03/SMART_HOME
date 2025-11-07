@@ -27,7 +27,7 @@ Key elements include:
 - Device layer: ESP32/other microcontrollers
 - Communication: MQTT protocol over TLS/mTLS for secure transport  
 - Network/Infrastructure: Local LAN/WAN, gateways, VLANs, firewall rules, VPN tunnel (OpenVPN)  
-- Cloud & Platform: ThingsBoard Cloud for device management, visualization, telemetry, alerting :contentReference[oaicite:2]{index=2}  
+- Cloud & Platform: ThingsBoard Cloud for device management, visualization, telemetry, alerting
 - Security: Certificate-based authentication, token authentication, strong access control and network segmentation  
 - Visualization: ThingsBoard dashboards for telemetry and remote control
 
