@@ -34,7 +34,7 @@ Key elements include:
 ## 🛠️ Getting Started  
 ### Prerequisites  
 - A ThingsBoard Cloud account or ThingsBoard on-premises deployment  
-- MQTT broker configured for TLS/mTLS or using ThingsBoard’s built-in MQTT with SSL support :contentReference[oaicite:3]{index=3}  
+- MQTT broker configured for TLS/mTLS or using ThingsBoard’s built-in MQTT with SSL 
 - OpenVPN server configured to link the IoT network and cloud platform  
 - IoT devices capable of MQTT over TLS and certificate handling  
 
